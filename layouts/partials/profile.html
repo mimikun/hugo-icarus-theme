@@ -10,7 +10,7 @@
       {{ with .Site.Params.bio }}<h3 id="title">{{ . }}</h3>{{ end }}
       {{ with .Site.Params.location }}<span id="location"><i class="fa fa-map-marker"></i>{{ . }}</span>{{ end }}
       {{ with .Site.Params.profile.follow_button }}
-          <a id="follow" href="{{ . }}">
+          <a id="follow" href="{{ . }}" rel="me">
               {{with $.Site.Data.l10n.profile.follow_button}}{{.}}{{end}}
           </a>
       {{ end }}
